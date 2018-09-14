@@ -122,7 +122,7 @@
                     swal(
                         response.procTitle,
                         response.procContent,
-                        'question'
+                        response.procStatus
                     )
                 }
 
