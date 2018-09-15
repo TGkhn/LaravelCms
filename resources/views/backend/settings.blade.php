@@ -43,6 +43,16 @@
                                         {{Form::bsText('txtSiteUrl',$ViewSetting["SiteUrl"],'Site URL','Site URL yolunu Giriniz.') }}
 
 
+                                        <div class="form-group">
+                                            <img src="/uploads/img/{{$ViewSetting["SiteLogo"]}}">
+                                            <label for="exampleInputFile">Logo</label>
+                                            <input type="file" name="fileLogo"  id="fileLogo">
+
+                                            <p class="help-block">Example block-level help text here.</p>
+                                        </div>
+
+
+
                                     </div>
                                     <!-- /.box-body -->
 
