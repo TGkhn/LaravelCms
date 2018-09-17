@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Input;
+use Intervention\Image\Facades\Image;
 
 
 class AdminController extends Controller
@@ -47,8 +48,9 @@ class AdminController extends Controller
 
                     $logo_ex = Input::file('fileLogo')->getClientOriginalExtension();
                     $logo_name = 'SiteLogo.' . $logo_ex;
-                    Storage::disk('uplodas')->makeDirectory('img');
-                    Image::make($logo->getRealPath())->resize(150, 150)->save('uploads/img/', $logo_name);
+                    Storage::disk('uploads')->makeDirectory('img');
+
+                    Image::make($logo->getRealPath())->resize(150, 150)->save('uploads/img/'.$logo_name);
 
                     $err = Settings::where("settingsName", "SiteLogo")->update(['SettingsValue' => $logo_name]);
 
