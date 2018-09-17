@@ -11,16 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
+Route::get('/', 'HomeGetController@getIndex' );
+Route::get('/index', 'HomeGetController@getIndex' );
+Route::get('/home', 'HomeGetController@getIndex' );
+Route::get('/anasayfa', 'HomeGetController@getIndex' );
+
+Route::get('/iletisim', 'HomeGetController@getContact');
+
 
 
 Route::group(['prefix'=>'admin'],function (){
-    Route::get('/','AdminController@getIndex');
+    Route::get('/','AdminGetController@getIndex');
 
-    Route::get('/settings','AdminController@getSettings');
-    Route::post('/settings','AdminController@postSettings');
+    Route::get('/settings','AdminGetController@getSettings');
+    Route::post('/settings','AdminPostController@postSettings');
 
 
 
