@@ -263,20 +263,108 @@ desired effect
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">HEADER</li>
                 <!-- Optionally, you can add icons to the links -->
-                <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-                <li><a href="/admin/settings"><i class="fa fa-gear"></i> <span>Ayarlar</span></a></li>
-                <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
+                <li class="active"><a href="/admin/index"><i class="fa fa-dashboard"></i> <span>AnaSayfa</span></a></li>
+
+                <li><a href="/admin/settings"><i class="fa fa-star"></i> <span>Müşteriler</span></a></li>
+
+
                 <li class="treeview">
-                    <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
+                    <a href="#"><i class="fa fa-image"></i> <span>Medya</span>
                         <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#">Link in level 2</a></li>
-                        <li><a href="#">Link in level 2</a></li>
+                        <li><a href="/admin/content/list"><i class="fa fa-reorder"></i> <span>Kütüphane</span></a></li>
+                        <li><a href="/admin/content/list"><i class="fa fa-plus"></i> <span>Medya Ekle</span></a></li>
+                        <li><a href="/admin/content/list"><i class="fa fa-tags"></i> <span>Etiketler</span></a></li>
                     </ul>
                 </li>
+
+
+
+                <li class="treeview">
+                    <a href="/admin/content/list"><i class="fa fa-file-text-o"></i> <span>Sayfalar</span>
+                        <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/admin/content/list"><i class="fa fa-reorder"></i> <span>Tüm Sayfalar</span></a></li>
+                        <li><a href="/admin/content/list"><i class="fa fa-plus"></i> <span>Sayfa Ekle</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-list"></i> <span>Yazılar</span>
+                        <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/admin/content/list"><i class="fa fa-reorder"></i> <span>Tüm Yazılar</span></a></li>
+                        <li><a href="/admin/content/list"><i class="fa fa-plus"></i> <span>Yazı Ekle</span></a></li>
+                        <li><a href="/admin/content/list"><i class="fa fa-sitemap"></i> <span>Kategoriler</span></a></li>
+                        <li><a href="/admin/content/list"><i class="fa fa-tags"></i> <span>Etiketler</span></a></li>
+                    </ul>
+                </li>
+
+
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-industry"></i> <span>Ürünler</span>
+                        <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/admin/content/list"><i class="fa fa-reorder"></i> <span>Tüm Ürünler</span></a></li>
+                        <li><a href="/admin/content/list"><i class="fa fa-plus"></i> <span>Ürün Ekle</span></a></li>
+                        <li><a href="/admin/content/list"><i class="fa fa-sitemap"></i> <span>Kategoriler</span></a></li>
+                        <li><a href="/admin/content/list"><i class="fa fa-tags"></i> <span>Etiketler</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-globe"></i> <span>Referanslar</span>
+                        <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/admin/content/list"><i class="fa fa-reorder"></i> <span>Tüm Referanslar</span></a></li>
+                        <li><a href="/admin/content/list"><i class="fa fa-plus"></i> <span>Referans Ekle</span></a></li>
+                        <li><a href="/admin/content/list"><i class="fa fa-sitemap"></i> <span>Kategoriler</span></a></li>
+                        <li><a href="/admin/content/list"><i class="fa fa-tags"></i> <span>Etiketler</span></a></li>
+                    </ul>
+                </li>
+
+                <li><a href="/admin/settings"><i class="fa fa-comment"></i> <span>Yorumlar</span></a></li>
+
+
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-user"></i> <span>Kullanıcılar</span>
+                        <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/admin/content/list"><i class="fa fa-reorder"></i> <span>Tüm Kullanıcılar</span></a></li>
+                        <li><a href="/admin/content/list"><i class="fa fa-plus"></i> <span>Kullanıcı Ekle</span></a></li>
+                        <li><a href="/admin/content/list"><i class="fa fa-tags"></i> <span>Profiliniz</span></a></li>
+                    </ul>
+                </li>
+
+
+
+
+                <li><a href="/admin/settings"><i class="fa fa-gear"></i> <span>Ayarlar</span></a></li>
+                <li><a href="/admin/settings"><i class="fa fa-fax"></i> <span>İletişim</span></a></li>
+
+
+
+                <li><a href="/admin/settings"><i class="fa fa-link"></i> <span>Menüler</span></a></li>
+
+
             </ul>
             <!-- /.sidebar-menu -->
         </section>

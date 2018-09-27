@@ -22,6 +22,7 @@ Route::get('/iletisim', 'HomeGetController@getContact');
 
 Route::group(['prefix'=>'admin'],function (){
     Route::get('/','AdminGetController@getIndex');
+    Route::get('/index','AdminGetController@getIndex');
 
     Route::get('/settings','AdminGetController@getSettings');
     Route::post('/settings','AdminPostController@postSettings');
