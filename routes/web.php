@@ -27,6 +27,9 @@ Route::group(['prefix'=>'admin'],function (){
     Route::get('/settings','AdminGetController@getSettings');
     Route::post('/settings','AdminPostController@postSettings');
 
+    Route::get('/pages','AdminGetController@getPages');
+    Route::post('/pages','AdminPostController@postPages');
+
 
 
 });

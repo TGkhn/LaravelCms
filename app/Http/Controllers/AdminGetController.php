@@ -20,4 +20,12 @@ class AdminGetController extends AdminController
 
         return view('backend.settings')->with('ViewSetting',$ViewSetting);
     }
+
+
+    public function getPages(){
+
+        $allPages = Settings::all();
+
+        return view('backend.settings')->with('allPages',$allPages);
+    }
 }

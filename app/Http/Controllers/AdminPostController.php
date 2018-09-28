@@ -44,7 +44,7 @@ class AdminPostController extends AdminController
                         return response(["procStatus" => "error", "procTitle" => "Opppss", "procContent" => "Hatalı"]);
                     }
 
-                    /*
+
                     unset($request["_token"]);
                     //unset($request["_token"]);
 
@@ -60,7 +60,7 @@ class AdminPostController extends AdminController
                     } else {
                         return response(["procStatus" => "error", "procTitle" => "Opppss", "procContent" => "Hatalı"]);
                     }
-                    */
+                    
 
                 }
             }
