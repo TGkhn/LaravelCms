@@ -45,16 +45,12 @@
 
                                         {{Form::bsText('txtSiteUrl',$ViewSetting["siteUrl"],'Site URL','Site URL yolunu Giriniz.') }}
 
-                                        {{Form::bsText('txtDateFormat',$ViewSetting["dateFormat"],'Tarih Biçimi','Tarih biçimi   .') }}
+                                        {{Form::bsText('txtDateFormat',$ViewSetting["dateFormat"],'Tarih Biçimi','Tarih biçimi') }}
+
+                                        {{Form::bsText('txtTimeFormat',$ViewSetting["timeFormat"],'Saat Biçimi','Saat biçimi') }}
 
 
-                                        <div class="form-group">
-                                            <img src="/uploads/img/{{$ViewSetting["siteLogo"]}}">
-                                            <label for="exampleInputFile">Logo</label>
-                                            <input type="file" name="fileLogo" id="fileLogo">
 
-                                            <p class="help-block">Example block-level help text here.</p>
-                                        </div>
 
 
                                     </div>
@@ -81,6 +77,8 @@
 
                                         {{Form::bsText('txtLargeImageHeight',$ViewSetting["largeImageHeight"],'Büyük Resim Uzunluk','Büyük Resim Uzunluk') }}
 
+                                        {{Form::bsText('txtUploadPath',$ViewSetting["uploadPath"],'Medya Depo Alanı','Medya Depo Alanı') }}
+
 
 
                                     </div>
@@ -94,13 +92,13 @@
 
                                     <div class="box-body">
 
-                                        {{Form::bsText('txtFacebook',$ViewSetting["urlFacebook"],'FaceBook','FaceBook') }}
+                                        {{Form::bsText('txtUrlFacebook',$ViewSetting["urlFacebook"],'FaceBook','FaceBook') }}
 
-                                        {{Form::bsText('txtTwitter',$ViewSetting["urlTwitter"],'Twitter','Twitter') }}
+                                        {{Form::bsText('txtUrlTwitter',$ViewSetting["urlTwitter"],'Twitter','Twitter') }}
 
-                                        {{Form::bsText('txtInstagram',$ViewSetting["urlInstagram"],'Instagram','Instagram') }}
+                                        {{Form::bsText('txtUrlInstagram',$ViewSetting["urlInstagram"],'Instagram','Instagram') }}
 
-                                        {{Form::bsText('txtGoogle',$ViewSetting["urlGoogle"],'Google Plus','Google Plus') }}
+                                        {{Form::bsText('txtUrlGoogle',$ViewSetting["urlGoogle"],'Google Plus','Google Plus') }}
 
                                     </div>
 
@@ -111,11 +109,11 @@
                                     <div class="box-body">
 
 
-                                        {{Form::bsText('txtAdrress',$ViewSetting["contactAdrress"],'Adres','Adres') }}
+                                        {{Form::bsText('txtContactAdrress',$ViewSetting["contactAdrress"],'Adres','Adres') }}
 
-                                        {{Form::bsText('txtPhone',$ViewSetting["contactPhone"],'Telefon','Telefon') }}
+                                        {{Form::bsText('txtContactPhone',$ViewSetting["contactPhone"],'Telefon','Telefon') }}
 
-                                        {{Form::bsText('txtMail',$ViewSetting["contactMail"],'Mail Adresi','Mail Adresi') }}
+                                        {{Form::bsText('txtContactMail',$ViewSetting["contactMail"],'Mail Adresi','Mail Adresi') }}
 
 
                                     </div>
